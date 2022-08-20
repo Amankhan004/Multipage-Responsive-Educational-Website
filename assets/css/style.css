@@ -489,6 +489,90 @@ footer .copyright p{
     width: 90px;
     height: auto;
 }
+
+/* blog */
+
+#blog-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+}
+#blog-container .blogs{
+    width: 60%;
+}
+
+#blog-container .blogs img{
+    width: 100%;
+    border-radius: 19px;
+}
+#blog-container .blogs .posts h3{
+    color: #29303B;
+    padding: 15px 0px 10px 0px;
+}
+#blog-container .blogs .posts p{
+    color: #757373;
+    padding-bottom: 20px;
+}
+#blog-container .blogs .posts{
+    padding-bottom: 60px;
+}
+#blog-container .blogs .posts a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: rgb(21,21,100);
+    padding: 13px 35px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#blog-container .cate{
+    width: 30%;
+}
+#blog-container .cate h2{
+    padding-bottom: 7px;
+}
+#blog-container .cate a{
+    text-decoration: none;
+    line-height: 45px;
+    font-weight: 500;
+    color: #757373;
+}
+#blog-container .blogpost img{
+    width: 100%;
+    border-radius: 19px;
+}
+#blog-container .blogpost{
+    width: 60% !important;
+    margin: 0 auto !important;
+}
+#blog-container .blogpost p{
+    text-align: justify;
+    padding-bottom: 60px;
+}
+#blog-container .blogpost .posts a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: rgb(21,21,100);
+    padding: 13px 35px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+}
+#blog-container .blogpost .posts h3{
+    color: #29303B;
+    padding: 15px 0px 10px 0px;
+}
+#blog-container .blogpost .posts p{
+    color: #757373;
+    padding-bottom: 20px;
+}
+
+
+
 @media (max-width: 769px){
     nav {
         padding: 15px 20px;
@@ -574,6 +658,22 @@ footer .copyright p{
     width: 50px;
 }
 
+/* blog */
+
+#blog-container{
+    padding: 8vw 4vw;
+}
+
+#blog-container .blogpost{
+    width: 100% !important;
+    margin-top: 30px !important ;
+}
+#blog-container .blogpost img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
 }
 @media (max-width:475px){
     #registration{
@@ -616,6 +716,21 @@ footer .copyright p{
         width: 60px;
         margin: 10px 15px;
         height: auto;
+    }
+
+    /* blog  */
+
+    #blog-container{
+        flex-direction: column;
+    }
+    #blog-container .blogs{
+        width: 100%;
+    }
+    #blog-container .cate{
+        width: 100%;
+    }
+    #blog-container .blogpost{
+        margin-top: 70px !important ;
     }
 
 }
